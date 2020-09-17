@@ -1,24 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Video Stream View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VideoStreamViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="VideoStreamViewController" customModule="VideoStreamiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VAe-zf-XBe">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mZo-di-wfu">
+                                    <size key="itemSize" width="200" height="200"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoStreamCollectionViewCell" id="5su-wt-Yk1" customClass="VideoStreamCollectionViewCell" customModule="VideoStreamiOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hy5-Y4-EOH">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A2G-jP-NU2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="140"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="qIJ-Ff-DWq"/>
+                                                        <constraint firstAttribute="width" secondItem="A2G-jP-NU2" secondAttribute="height" multiplier="250:150" id="uhn-n8-xQd"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpd-A8-3y6">
+                                                    <rect key="frame" x="0.0" y="169" width="200" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="4CF-Qo-wlj"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wo-Ka-8fC">
+                                                    <rect key="frame" x="0.0" y="148" width="200" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="v5P-eB-BBc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="A2G-jP-NU2" firstAttribute="top" secondItem="hy5-Y4-EOH" secondAttribute="top" id="7MZ-lR-Fsh"/>
+                                                <constraint firstItem="A2G-jP-NU2" firstAttribute="leading" secondItem="hy5-Y4-EOH" secondAttribute="leading" id="86F-Ch-Z6d"/>
+                                                <constraint firstAttribute="trailing" secondItem="cpd-A8-3y6" secondAttribute="trailing" id="Egx-ew-SM9"/>
+                                                <constraint firstAttribute="trailing" secondItem="5Wo-Ka-8fC" secondAttribute="trailing" id="Ffk-2h-5oc"/>
+                                                <constraint firstItem="cpd-A8-3y6" firstAttribute="leading" secondItem="hy5-Y4-EOH" secondAttribute="leading" id="JYI-xn-ed9"/>
+                                                <constraint firstAttribute="bottom" secondItem="A2G-jP-NU2" secondAttribute="bottom" constant="60" id="U3b-fQ-EcC"/>
+                                                <constraint firstItem="cpd-A8-3y6" firstAttribute="top" secondItem="5Wo-Ka-8fC" secondAttribute="bottom" id="ggN-Ku-KeB"/>
+                                                <constraint firstItem="5Wo-Ka-8fC" firstAttribute="leading" secondItem="hy5-Y4-EOH" secondAttribute="leading" id="qco-J0-lFW"/>
+                                                <constraint firstAttribute="bottom" secondItem="cpd-A8-3y6" secondAttribute="bottom" constant="10" id="ryA-pm-eBw"/>
+                                                <constraint firstAttribute="trailing" secondItem="A2G-jP-NU2" secondAttribute="trailing" id="vNA-nF-JPL"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="200" height="200"/>
+                                        <connections>
+                                            <outlet property="categoriesLabel" destination="5Wo-Ka-8fC" id="LW9-vk-aEu"/>
+                                            <outlet property="titleLabel" destination="cpd-A8-3y6" id="9vC-eu-AcO"/>
+                                            <outlet property="videoImageView" destination="A2G-jP-NU2" id="3lT-Fy-W0N"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="VideoStreamCollectionViewHeaderCell" reuseIdentifier="VideoStreamCollectionViewHeaderCell" id="GXC-Ak-xcl" customClass="VideoStreamCollectionViewHeaderCell" customModule="VideoStreamiOS" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8t-Gd-OqA">
+                                            <rect key="frame" x="10" y="0.0" width="384" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="37" id="bT8-hd-mlI"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="S8t-Gd-OqA" secondAttribute="bottom" id="5FO-36-rcm"/>
+                                        <constraint firstItem="S8t-Gd-OqA" firstAttribute="top" secondItem="GXC-Ak-xcl" secondAttribute="top" id="7hf-Ea-o1h"/>
+                                        <constraint firstAttribute="trailing" secondItem="S8t-Gd-OqA" secondAttribute="trailing" constant="20" id="TFg-fh-2kk"/>
+                                        <constraint firstItem="S8t-Gd-OqA" firstAttribute="leading" secondItem="GXC-Ak-xcl" secondAttribute="leading" constant="10" id="zVa-mE-TV9"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="sectionNameLabel" destination="S8t-Gd-OqA" id="ErP-47-Cod"/>
+                                    </connections>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VAe-zf-XBe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="APm-na-SxM"/>
+                            <constraint firstItem="VAe-zf-XBe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="P2D-Dc-bGp"/>
+                            <constraint firstItem="VAe-zf-XBe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bpu-9j-GWM"/>
+                            <constraint firstItem="VAe-zf-XBe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="sFs-eB-F0B"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="videoStreamCollectionView" destination="VAe-zf-XBe" id="z0c-xJ-8XH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="98.4375"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

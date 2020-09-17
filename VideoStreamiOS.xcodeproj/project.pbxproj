@@ -3,18 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C73D9CA525132AA000742835 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CA425132AA000742835 /* AppDelegate.swift */; };
 		C73D9CA725132AA000742835 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CA625132AA000742835 /* SceneDelegate.swift */; };
-		C73D9CA925132AA000742835 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CA825132AA000742835 /* ViewController.swift */; };
 		C73D9CAC25132AA000742835 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73D9CAA25132AA000742835 /* Main.storyboard */; };
 		C73D9CAE25132AA200742835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73D9CAD25132AA200742835 /* Assets.xcassets */; };
 		C73D9CB125132AA200742835 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73D9CAF25132AA200742835 /* LaunchScreen.storyboard */; };
 		C73D9CBC25132AA300742835 /* VideoStreamiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CBB25132AA300742835 /* VideoStreamiOSTests.swift */; };
 		C73D9CC725132AA300742835 /* VideoStreamiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CC625132AA300742835 /* VideoStreamiOSUITests.swift */; };
+		C73D9CE125132BEA00742835 /* VideoStreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CD525132BEA00742835 /* VideoStreamViewModel.swift */; };
+		C73D9CE225132BEA00742835 /* MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CD725132BEA00742835 /* MetaData.swift */; };
+		C73D9CE325132BEA00742835 /* MediaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CD825132BEA00742835 /* MediaData.swift */; };
+		C73D9CE425132BEA00742835 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CD925132BEA00742835 /* ItemData.swift */; };
+		C73D9CE525132BEA00742835 /* FeedMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CDA25132BEA00742835 /* FeedMetaData.swift */; };
+		C73D9CE625132BEA00742835 /* PagingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CDB25132BEA00742835 /* PagingData.swift */; };
+		C73D9CE725132BEA00742835 /* VideoStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CDC25132BEA00742835 /* VideoStream.swift */; };
+		C73D9CE825132BEA00742835 /* PublicationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CDD25132BEA00742835 /* PublicationData.swift */; };
+		C73D9CE925132BEA00742835 /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CDE25132BEA00742835 /* Sections.swift */; };
+		C73D9CEA25132BEA00742835 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CE025132BEA00742835 /* WebService.swift */; };
+		C73D9CED25132CCB00742835 /* VideoStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CEC25132CCB00742835 /* VideoStreamViewController.swift */; };
+		C73D9CEF25132D3000742835 /* VideoStreamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CEE25132D3000742835 /* VideoStreamCollectionViewCell.swift */; };
+		C73D9CF2251341CD00742835 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C73D9CF1251341CD00742835 /* Kingfisher */; };
+		C73D9CF42513438800742835 /* VideoStreamCollectionViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CF32513438800742835 /* VideoStreamCollectionViewHeaderCell.swift */; };
+		C73D9CF625134B9000742835 /* VideoStreamCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D9CF525134B9000742835 /* VideoStreamCollectionViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +52,6 @@
 		C73D9CA125132AA000742835 /* VideoStreamiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoStreamiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73D9CA425132AA000742835 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C73D9CA625132AA000742835 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C73D9CA825132AA000742835 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C73D9CAB25132AA000742835 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C73D9CAD25132AA200742835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C73D9CB025132AA200742835 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +62,20 @@
 		C73D9CC225132AA300742835 /* VideoStreamiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoStreamiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73D9CC625132AA300742835 /* VideoStreamiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStreamiOSUITests.swift; sourceTree = "<group>"; };
 		C73D9CC825132AA300742835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C73D9CD525132BEA00742835 /* VideoStreamViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoStreamViewModel.swift; sourceTree = "<group>"; };
+		C73D9CD725132BEA00742835 /* MetaData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaData.swift; sourceTree = "<group>"; };
+		C73D9CD825132BEA00742835 /* MediaData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaData.swift; sourceTree = "<group>"; };
+		C73D9CD925132BEA00742835 /* ItemData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
+		C73D9CDA25132BEA00742835 /* FeedMetaData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedMetaData.swift; sourceTree = "<group>"; };
+		C73D9CDB25132BEA00742835 /* PagingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingData.swift; sourceTree = "<group>"; };
+		C73D9CDC25132BEA00742835 /* VideoStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoStream.swift; sourceTree = "<group>"; };
+		C73D9CDD25132BEA00742835 /* PublicationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicationData.swift; sourceTree = "<group>"; };
+		C73D9CDE25132BEA00742835 /* Sections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
+		C73D9CE025132BEA00742835 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		C73D9CEC25132CCB00742835 /* VideoStreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoStreamViewController.swift; sourceTree = "<group>"; };
+		C73D9CEE25132D3000742835 /* VideoStreamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStreamCollectionViewCell.swift; sourceTree = "<group>"; };
+		C73D9CF32513438800742835 /* VideoStreamCollectionViewHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStreamCollectionViewHeaderCell.swift; sourceTree = "<group>"; };
+		C73D9CF525134B9000742835 /* VideoStreamCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStreamCollectionViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73D9CF2251341CD00742835 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,11 +129,14 @@
 			children = (
 				C73D9CA425132AA000742835 /* AppDelegate.swift */,
 				C73D9CA625132AA000742835 /* SceneDelegate.swift */,
-				C73D9CA825132AA000742835 /* ViewController.swift */,
-				C73D9CAA25132AA000742835 /* Main.storyboard */,
-				C73D9CAD25132AA200742835 /* Assets.xcassets */,
-				C73D9CAF25132AA200742835 /* LaunchScreen.storyboard */,
+				C73D9CEB25132C9B00742835 /* View Controllers */,
+				C73D9CD625132BEA00742835 /* Model */,
+				C73D9CDF25132BEA00742835 /* Service */,
+				C73D9CD425132BEA00742835 /* View Model */,
 				C73D9CB225132AA200742835 /* Info.plist */,
+				C73D9CAD25132AA200742835 /* Assets.xcassets */,
+				C73D9CAA25132AA000742835 /* Main.storyboard */,
+				C73D9CAF25132AA200742835 /* LaunchScreen.storyboard */,
 			);
 			path = VideoStreamiOS;
 			sourceTree = "<group>";
@@ -128,6 +159,48 @@
 			path = VideoStreamiOSUITests;
 			sourceTree = "<group>";
 		};
+		C73D9CD425132BEA00742835 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				C73D9CD525132BEA00742835 /* VideoStreamViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		C73D9CD625132BEA00742835 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C73D9CD725132BEA00742835 /* MetaData.swift */,
+				C73D9CD825132BEA00742835 /* MediaData.swift */,
+				C73D9CD925132BEA00742835 /* ItemData.swift */,
+				C73D9CDA25132BEA00742835 /* FeedMetaData.swift */,
+				C73D9CDB25132BEA00742835 /* PagingData.swift */,
+				C73D9CDC25132BEA00742835 /* VideoStream.swift */,
+				C73D9CDD25132BEA00742835 /* PublicationData.swift */,
+				C73D9CDE25132BEA00742835 /* Sections.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C73D9CDF25132BEA00742835 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C73D9CE025132BEA00742835 /* WebService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C73D9CEB25132C9B00742835 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C73D9CEC25132CCB00742835 /* VideoStreamViewController.swift */,
+				C73D9CEE25132D3000742835 /* VideoStreamCollectionViewCell.swift */,
+				C73D9CF32513438800742835 /* VideoStreamCollectionViewHeaderCell.swift */,
+				C73D9CF525134B9000742835 /* VideoStreamCollectionViewDataSource.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +217,9 @@
 			dependencies = (
 			);
 			name = VideoStreamiOS;
+			packageProductDependencies = (
+				C73D9CF1251341CD00742835 /* Kingfisher */,
+			);
 			productName = VideoStreamiOS;
 			productReference = C73D9CA125132AA000742835 /* VideoStreamiOS.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +291,9 @@
 				Base,
 			);
 			mainGroup = C73D9C9825132AA000742835;
+			packageReferences = (
+				C73D9CF0251341CD00742835 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = C73D9CA225132AA000742835 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +337,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C73D9CA925132AA000742835 /* ViewController.swift in Sources */,
+				C73D9CEA25132BEA00742835 /* WebService.swift in Sources */,
+				C73D9CF42513438800742835 /* VideoStreamCollectionViewHeaderCell.swift in Sources */,
+				C73D9CE825132BEA00742835 /* PublicationData.swift in Sources */,
+				C73D9CEF25132D3000742835 /* VideoStreamCollectionViewCell.swift in Sources */,
+				C73D9CE925132BEA00742835 /* Sections.swift in Sources */,
+				C73D9CE425132BEA00742835 /* ItemData.swift in Sources */,
+				C73D9CE125132BEA00742835 /* VideoStreamViewModel.swift in Sources */,
+				C73D9CE525132BEA00742835 /* FeedMetaData.swift in Sources */,
 				C73D9CA525132AA000742835 /* AppDelegate.swift in Sources */,
+				C73D9CF625134B9000742835 /* VideoStreamCollectionViewDataSource.swift in Sources */,
 				C73D9CA725132AA000742835 /* SceneDelegate.swift in Sources */,
+				C73D9CE625132BEA00742835 /* PagingData.swift in Sources */,
+				C73D9CED25132CCB00742835 /* VideoStreamViewController.swift in Sources */,
+				C73D9CE725132BEA00742835 /* VideoStream.swift in Sources */,
+				C73D9CE325132BEA00742835 /* MediaData.swift in Sources */,
+				C73D9CE225132BEA00742835 /* MetaData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +685,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C73D9CF0251341CD00742835 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C73D9CF1251341CD00742835 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C73D9CF0251341CD00742835 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C73D9C9925132AA000742835 /* Project object */;
 }
